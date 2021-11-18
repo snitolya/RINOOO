@@ -1,0 +1,302 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a {
+text-decoration: none;
+    }
+ul{
+list-style: none;
+    }
+body{
+font-family: 'Lora', serif;
+font-weight: 400;
+    }
+.font-roboto , .font-roboto a{
+font-family: 'Roboto' , sans-serif;
+font-weight: 700;
+    }
+header{
+height: 80px;
+width: 100%;
+background: rgba(0, 0, 0, 0.2);
+z-index: 2; /*текст в headere поверх картинки*/
+
+position: absolute;
+}
+
+.banner img{
+width: 100%;
+height: 600px;
+object-fit: cover; /*заполнение картинкой выделенной области*/
+}
+
+.header-flex{
+padding: 0px 70px;
+display: flex;
+justify-content: space-between; /*разброс по сторонам*/
+align-items: center;
+height: 100%;
+}
+
+.header-nav ul{ /*выстраиваем в линию*/
+display: flex;
+align-items: center;
+}
+
+.header-nav ul li a{
+font-size: 12px;
+line-height: 14px;
+color: #e5e5e5; /*цвет текста в шапке*/
+transition: all 0.3s;
+}
+
+.header-nav ul li a:hover{
+color: #fff;
+transition: all 0.3s;
+}
+
+.header-nav ul li{
+margin-right: 25px;
+}
+
+.header-nav ul li:last-child{ /*последний элемент, редактирование, для первого элемента - first-child, второй/третий элемент в скобках прописываем- ntn-child(2)*/
+margin-right: 0px;
+}
+.header-flex-2, .header-social ul{ /*выставляем в ряд*/
+display: flex;
+
+}
+.header-social ul li{
+    margin-right: 18px;
+}
+.header-social ul li:last-child {
+    margin-right: 0px;
+}
+.header-social{
+    margin: 0px 17px;
+    border-left: 0.5px solid #E5E5E5; /*чёрточки  взяты с сайта коды*/
+    border-right: 0.5px solid #E5E5E5;
+    padding: 0px 17px;
+}
+.banner{
+    position:relative; /*меняет точку исчисления для дочерних элементов*/
+}
+.banner-info{
+    position: absolute;/*т.к.дочерний класс*/
+    width: 530px;
+    left: 70px;
+    bottom: 140px;
+    top: 315px;
+    height: 92px;
+ 
+}
+.tag{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 5px 10px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #ffffff;
+}
+.middle-line{
+    height: 1px;
+    min-width: 30px;
+    background: #e5e5e5;
+    margin: 7px 11px 0px 11px;
+    font-size: 12px;
+}
+.header-banner-info{
+    color: #FFFFFF;
+
+}
+.header-banner-subtext{
+    font-size: 12px;
+    line-height: 15px;
+    color: #e5e5e5;
+    display: flex;
+
+    height: 40px;
+    left: 180px;
+    top: 420px;
+
+}
+
+.container{
+    width: 1300px;
+    margin: 150px auto;
+}
+.h2-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: #495057;;
+}
+.filter-list{ /*в строчкку делаем*/
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.filter-list li{
+    margin-right: 20px;
+}
+.filter-list li:last-child{
+    margin-left: auto;
+    margin-right: 0px;
+}
+.filter-list li a{
+font-weight: bold;
+font-size: 12px;
+line-height: 25px;
+color: #495057;
+}
+.filter-list li a:hover{
+    color:#D4A373;
+    transition: all 0.3s;
+    }
+.topic{
+    width: 310px;
+    position: relative;/*внутренние элементы становяться дочерними*/
+    color: #6C757D;
+}
+.topic-image{
+    width: 100%;
+    height: 280px;
+}
+.topic-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*задаёт заполнение объекта внутри своего объекта*/
+    border-radius: 5px; /*нажимаем и задерживаеем ALT + стрелки вверх и вниз , можно перемещать всю строчку по css*/
+}
+.tag-list{
+    position: absolute;/*теги поверх картинок*/
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+}
+.tag-list li{
+    margin-right: 10px;
+}
+.tag-list li:last-child{
+    margin-right: 0px;
+}
+.topic-date{
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    
+    color: #6C757D; 
+}
+.topic-title{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #495057;
+}
+.topic-text{
+    font-size: 12px;
+    line-height: 20px;
+    color: #6C757D;
+}
+.topics-list{
+    display: flex;
+    flex-wrap: wrap;/*переносит на новую строку*/
+    gap: 50px 20px;/*отступы*/
+}
+
+.banner-info-two{
+    position: absolute;
+    top: 224px;
+    left: calc(50% - 530px / 2); /*обязательно ставить пробел!!!!*/
+    width: 530px;
+    text-align: center;
+    font-size: 20px;
+}
+.header-banner-subtext-two{
+    color: #E5E5E5;;
+    width: 420px;
+    margin: 13px auto 24px auto;
+    font-size: 12px;
+}
+.date{
+    color: #E5E5E5;;
+    margin-top: 15px;
+}
+.header-banner-subtext-two .middle-line{
+    width: 30px;
+    margin: 0px auto ;
+}
+
+.line{
+   display: flex;
+   margin-top: 20px;
+}
+.topic{
+    cursor: pointer;/*делаем курсор ручку*/
+}
+.topic-image{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.topic:hover .topic-image img{
+transform: scale(1.2); /*увеличивает картинку*/
+transition: all o.3s;
+}
+.tag-list{
+    z-index: 1;
+}
+.post{
+    position: relative;
+    width: 420px;
+    height: 350px;
+}
+.post img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+}
+.post .topic{
+    color: #e5e5e5;
+    position: absolute;
+    z-index: 1;
+    bottom: 42px;
+    left: 40px;
+    width: auto;
+    right: 40px;
+}
+
+.post .topic .topic-title{
+    color: white;
+}
+
+.topic-text-two .topic-date-two{
+    color: #E5E5E5;
+    font-size: 12px;
+    font-family: 'Lora', serif;
+}
+.post-list{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.container h2{
+    margin-bottom: 70px;
+    width: 217px;
+    height: 46px;
+}
+
+/*.topics-list-two{
+    display: flex;
+    justify-content: space-between;
+}*/
+
