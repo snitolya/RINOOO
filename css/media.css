@@ -1,9 +1,26 @@
 @media screen and (max-width:1300px) {
   .container{
-      width: 97%;
+    width: 97%;
   }  
+  .topic{
+    width: 32%;
+  }
+  .topics-list{
+    justify-content: space-between;
+  }
 }
 
+@media screen and (max-width:1030px) {
+.topic{
+  width: 48%;
+}
+.post-list{
+  overflow-x:auto;
+}
+.post{
+  min-width: 420px;
+}
+}
 @media screen and (max-width:730px) {
     .header-flex-2{
         display: none;/*для минималльной ширины убирается шапка,для наглядности*/
@@ -11,10 +28,39 @@
   }
 
   @media screen and (max-width:600px) {
-    .banner-info ,
+    .banner-info,
     .banner-info-two{
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .banner-info{
+      text-align: center;
+    }
+    .header-banner-subtext{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width:515px) {
+    .topic {
+      width: 100%;
+    }
+    .filter-list{
+      display: none;
+    }
+    .mobile-filter{
+      display: block;
+    }
+    .header-banner-subtext-two{
+      width: auto;
+    }
+    .footer-container{
+    flex-wrap: wrap;
+    gap: 30px 0px;
+    }
+    .footer-container div:nth-child(1){ /*меняем местами дивы, 1 переносим на 4 позицию*/
+      order: 4;
     }
   }

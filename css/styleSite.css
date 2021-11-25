@@ -350,3 +350,20 @@ h3{
     justify-content: space-between;
     margin: 0px auto;
 }
+.mobile-filter{
+    display: none;
+    margin: 15px 0px;
+}
+.mobile-filter p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #495057;
+}
+.mobile-filter select{
+    width: 100%;
+    border: none;
+    color: #495057;
+    padding: 5px 7px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
