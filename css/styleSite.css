@@ -404,15 +404,16 @@ h3{
 #hamburger{
     display: none;
     }
-#hamburger:checked ~ .mobile-hamburger-container .hamburger-label .hamburger::before{
+#hamburger:checked ~ header .header-flex .mobile-nav .mobile-hamburger-container .hamburger-label .hamburger::before{
 transform: rotate(45deg);
 transition: all 0.3s;
 }
-#hamburger:checked ~ .mobile-hamburger-container .hamburger-label .hamburger::after{
+    #hamburger:checked ~ header .header-flex .mobile-nav .mobile-hamburger-container .hamburger-label .hamburger::after{
     transform: rotate(-45deg);
     transition: all 0.3s;
     }
-#hamburger:checked ~ .mobile-hamburger-container .hamburger-label .hamburger{
+
+    #hamburger:checked ~ header .header-flex .mobile-nav .mobile-hamburger-container .hamburger-label .hamburger{
         height: 0;
     }
 .mobile-menu{
@@ -422,7 +423,15 @@ transition: all 0.3s;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     }
-#hamburger:checked ~ .mobile-menu{
+#hamburger:checked ~ header{
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    #hamburger:checked ~ header .header-flex .mobile-nav .mobile-menu{
     top: 80px;
     transition: all o.3s;
+}
+
+.mobile-menu ul li{
+text-align: right;
 }
