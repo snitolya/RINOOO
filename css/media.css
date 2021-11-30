@@ -24,6 +24,12 @@
 @media screen and (max-width:730px) {
     .header-flex-2{
         display: none;/*для минималльной ширины убирается шапка,для наглядности*/
+    }
+    header-flex{
+      padding: 0px 20px;
+    }
+    .mobile-nav{
+      display: block;
     }  
   }
 
